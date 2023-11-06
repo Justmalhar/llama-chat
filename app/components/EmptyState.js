@@ -3,7 +3,7 @@ export default function EmptyState({ setOpen, setPrompt }) {
     <div className="mt-12 sm:mt-24 space-y-6 text-gray-400 text-base mx-8 sm:mx-4 sm:text-2xl leading-12">
       <p>
         {" "}
-        Customize Llama&apos;s personality by clicking the{" "}
+        Customize Assistant&apos;s personality by clicking the{" "}
         <button
           className="prompt-button inline-flex items-center "
           onClick={() => setOpen(true)}
@@ -64,7 +64,7 @@ export default function EmptyState({ setOpen, setPrompt }) {
             )
           }
         >
-          name your pets.
+          name your pets - <b>uncensored</b>.
         </button>{" "}
       </p>
       <p>Send me a message, or upload an image or audio file.</p>
