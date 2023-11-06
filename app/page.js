@@ -27,7 +27,7 @@ const VERSIONS = [
   {
     name: "Uncensored Alpine 7B",
     version: "02e509c789964a7ea8736978a43525956ef40397be9033abf9fd2badfe68c9e3",
-    shortened: "70B",
+    shortened: "7B",
   },
   {
     name: "Llava 13B",
@@ -233,7 +233,7 @@ export default function HomePage() {
           >
             {size.shortened == "Llava" || size.shortened == "Salmonn"
               ? size.shortened
-              : "Uncensored Alpine" + size.shortened}
+              : "Uncensored Alpine " + size.shortened}
           </button>
         </div>
         <div className="flex justify-end">
