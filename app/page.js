@@ -233,7 +233,7 @@ export default function HomePage() {
           >
             {size.shortened == "Llava" || size.shortened == "Salmonn"
               ? size.shortened
-              : "Uncensored " + size.shortened}
+              : "Uncensored Alpine" + size.shortened}
           </button>
         </div>
         <div className="flex justify-end">
