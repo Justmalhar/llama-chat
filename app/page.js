@@ -25,7 +25,7 @@ const VERSIONS = [
     shortened: "13B",
   },
   {
-    name: "Uncensored Alpine 70B",
+    name: "Uncensored Alpine 7B",
     version: "02e509c789964a7ea8736978a43525956ef40397be9033abf9fd2badfe68c9e3",
     shortened: "70B",
   },
