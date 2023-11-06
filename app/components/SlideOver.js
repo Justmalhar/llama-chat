@@ -48,7 +48,7 @@ export default function SlideOver({
                       <div className="bg-gray-700 px-4 py-6 sm:px-6">
                         <div className="flex items-center justify-between">
                           <Dialog.Title className="text-base font-semibold leading-6 text-white">
-                            🦙 Chat with a Llama
+                            🐬 Chat with Alpine
                           </Dialog.Title>
                           <div className="ml-3 flex h-7 items-center">
                             <button
@@ -66,7 +66,7 @@ export default function SlideOver({
                         </div>
                         <div className="mt-1">
                           <p className="text-sm text-gray-300">
-                            A project from Replicate.
+                            A project by Justmalhar.
                           </p>
                         </div>
                       </div>
@@ -78,7 +78,7 @@ export default function SlideOver({
                                 htmlFor="description"
                                 className="block font-bold text-sm leading-6 text-gray-900"
                               >
-                                Llama Size
+                                Alpine Size
                               </label>
 
                               <p
@@ -88,7 +88,7 @@ export default function SlideOver({
                                 Larger size means smarter, but slower.
                               </p>
                               <div className="">
-                                <Listbox value={size} onChange={setSize}>
+                                <Listbox value={size} onChange={setSize} disabled>
                                   <div className="relative mt-1">
                                     <Listbox.Button className="relative w-full cursor-default rounded-lg bg-white py-2 pl-3 pr-10 text-left border border-gray-300 focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
                                       <span className="block truncate">
@@ -179,6 +179,7 @@ export default function SlideOver({
                                   onChange={(e) =>
                                     setSystemPrompt(e.target.value)
                                   }
+                                  disabled
                                 />
                               </div>
                             </div>
