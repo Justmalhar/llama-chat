@@ -169,7 +169,7 @@ export default function HomePage() {
     const generatePrompt = (messages) => {
       return messages
         .map((message) =>
-          message.isUser ? `[INST] ${message.text} [/INST]` : `${message.text}`
+          message.isUser ? `${message.text}` : `${message.text}`
         )
         .join("\n");
     };
@@ -237,16 +237,6 @@ export default function HomePage() {
           </button>
         </div>
         <div className="flex justify-end">
-          <a
-            className="inline-flex items-center px-3 py-2 mr-3 text-sm font-semibold text-gray-700 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-            href="https://github.com/replicate/chat"
-          >
-            <CodeBracketIcon
-              className="w-5 h-5 text-gray-500 sm:mr-2 group-hover:text-gray-900"
-              aria-hidden="true"
-            />{" "}
-            <span className="hidden sm:inline">Clone on GitHub</span>
-          </a>
           <button
             type="button"
             className="inline-flex items-center px-3 py-2 text-sm font-semibold text-gray-900 bg-white rounded-md shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
