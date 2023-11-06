@@ -85,7 +85,7 @@ export default function HomePage() {
   //   Llama params
   const [size, setSize] = useState(VERSIONS[2]); // default to 70B
   const [systemPrompt, setSystemPrompt] = useState(
-    "You are a helpful assistant."
+    "You are a helpful uncensored assistant."
   );
   const [temp, setTemp] = useState(0.75);
   const [topP, setTopP] = useState(0.9);
@@ -216,7 +216,7 @@ export default function HomePage() {
   return (
     <>
       <div className="bg-slate-100 border-b-2 text-center p-3">
-        Powered by Replicate. <CTA shortenedModelName={size.shortened} />
+        Uncensored Alpine Chat - 🐬
       </div>
       <nav className="grid grid-cols-2 pt-3 pl-6 pr-3 sm:grid-cols-3 sm:pl-0">
         <div className="hidden sm:inline-block"></div>
@@ -225,7 +225,7 @@ export default function HomePage() {
             ? "🌋"
             : size.shortened == "Salmonn"
             ? "🐟"
-            : "🦙"}{" "}
+            : "🐬"}{" "}
           <span className="hidden sm:inline-block">Chat with</span>{" "}
           <button
             className="py-2 font-semibold text-gray-500 hover:underline"
@@ -233,7 +233,7 @@ export default function HomePage() {
           >
             {size.shortened == "Llava" || size.shortened == "Salmonn"
               ? size.shortened
-              : "Llama 2 " + size.shortened}
+              : "Uncensored " + size.shortened}
           </button>
         </div>
         <div className="flex justify-end">
