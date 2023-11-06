@@ -1,6 +1,6 @@
-# Llama Chat 🦙
+# 🐬 Chat with Uncensored Alpine 7B
 
-This is a [Next.js](https://nextjs.org/) app that demonstrates how to build a chat UI using the [Llama 2](https://replicate.com/replicate/llama70b-v2-chat) language model and Replicate's [streaming API (private beta)](https://replicate.com/docs/streaming).
+This is a [Next.js](https://nextjs.org/) app that demonstrates how to build a chat UI using the Dolphin Mistral language model and Replicate's [streaming API (private beta)](https://replicate.com/docs/streaming).
 
 Here's a demo:
 
